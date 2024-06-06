@@ -4,8 +4,8 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const BarChart = ({ data, options }) => {
-  return <Bar data={data} options={options} />;
+const BarChart = (props) => {
+  return <Bar data={props.data} options={props.options} />;
 };
 
 export default BarChart;
