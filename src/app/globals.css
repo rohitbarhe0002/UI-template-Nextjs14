@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;700&display=swap");
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -17,17 +13,146 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: #efefef;
+  font-family: "Palanquin Dark", sans-serif !important;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.hide_text {
+  width: auto;
+}
+
+.hide_text h3 {
+  display: none;
+}
+
+.side_Ber_button {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+
+.sideBarbtn img {
+  width: 40px;
+  height: 40px;
+}
+.com_button {
+  background-color: blue;
+  padding: 7px 15px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+.logo {
+  width: 35px;
+  height: 35px;
+}
+.main_logo{
+  width: 49%;
+  height: 40px;
+}
+.logo_wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.logo_hide {
+  width: 40px;
+  height: 40px;
+}
+
+.hide_text .sideBarbtn {
+  justify-content: center;
+}
+.header {
+  padding: 30px 0 0 0;
+}
+.version {
+  right: -150px;
+  top: -7px;
+  color: blue;
+}
+.btn_disable {
+  background-color: #a5a5a5;
+  color: #c9c9c9;
+}
+.item_box {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.item_box img {
+  margin-bottom: 20px;
+}
+.right_item_container {
+  width: 85%;
+  border-radius: 29px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 25px 20px;
+}
+.item_box:hover {
+  border: 1px solid blue;
+}
+.right_item_1 h3 {
+  color: rgb(104, 104, 233);
+  margin-top: 10px;
+}
+.right_item_1 h4 {
+  font-size: 14px;
+}
+.right_items_wrapper {
+  text-align: -webkit-right;
+  margin-bottom: 3rem;
+}
+.payment_detail_header h4{
+
+font-weight: 800;
+margin-bottom: 2rem;
+}
+.item_price{
+  color: red;
+}
+.item_list h6{
+font-size: 15px;
+}
+.item_list h4{
+font-weight: 600;
+  }
+.item_list{
+  margin-bottom: 3rem ;
+}
+.item_box :nth-child(4) {
+  margin-bottom: 0rem ;
+
+}
+.logout_btn {
+  background-color: transparent;
+  border: 1px solid gray;
+  color: black;
+}
+.mobile_sidebar{
+  width: 300px;
+}
+@media only screen and (max-width: 1024px) {
+
+
+  .right_item_container{
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 992px) {
+ 
+
+}
+@media only screen and (max-width: 768px) {
+  .mobile_sidebar{
+    width: 200px;
+  }
+
 }
